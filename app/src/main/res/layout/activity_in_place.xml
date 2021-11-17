@@ -43,8 +43,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="409dp"
-        android:layout_height="342dp"
+        android:layout_width="392dp"
+        android:layout_height="457dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -108,6 +108,66 @@
                 android:textColor="#020202"
                 app:layout_constraintStart_toEndOf="@+id/imageView10"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView24"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView36"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView37"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView38"
+                app:srcCompat="@drawable/sampleexerciseicon" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

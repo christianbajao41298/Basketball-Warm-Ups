@@ -45,8 +45,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="409dp"
-        android:layout_height="346dp"
+        android:layout_width="393dp"
+        android:layout_height="466dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -73,8 +73,8 @@
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="174dp"
+                android:layout_height="61dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="48dp"
                 android:text="Knee Stretch"
@@ -110,6 +110,69 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView22"
                 app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView23"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView40"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView41"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView42"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView43"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView44"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

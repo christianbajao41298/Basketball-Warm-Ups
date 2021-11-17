@@ -45,8 +45,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="403dp"
-        android:layout_height="354dp"
+        android:layout_width="387dp"
+        android:layout_height="465dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="1dp"
@@ -90,7 +90,7 @@
                 android:text="Arm Circles"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/button2"
+                app:layout_constraintTop_toBottomOf="@+id/armstretchbutton"
                 tools:textColor="@color/black" />
 
             <ImageView
@@ -121,6 +121,7 @@
                 android:layout_height="113dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView9"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView6"
                 app:srcCompat="@drawable/sampleexerciseicon" />
@@ -138,23 +139,28 @@
                 tools:textColor="@color/black" />
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="53dp"
-                android:background="@android:color/white"
+                android:id="@+id/armstretchbutton"
+                android:layout_width="218dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="28dp"
                 android:text="Arm Stretch"
                 android:textColor="@color/black"
+                android:theme="@style/Button.White"
+                android:background="@style/Button.White"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="113dp"
                 android:layout_height="113dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView26"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView7"
                 app:srcCompat="@drawable/sampleexerciseicon" />
@@ -170,6 +176,108 @@
                 app:layout_constraintStart_toEndOf="@+id/imageView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView14"
                 tools:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView27"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView28"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView30"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView32"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33"
+                app:srcCompat="@drawable/sampleexerciseicon" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView34"
+                app:srcCompat="@drawable/sampleexerciseicon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

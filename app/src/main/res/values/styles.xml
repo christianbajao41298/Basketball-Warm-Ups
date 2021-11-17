@@ -3,8 +3,12 @@
 
     <style name="AppTheme">
         <item name="android:textColorPrimary">@android:color/black
-
         </item>
-
     </style>
+    
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+
 </resources>

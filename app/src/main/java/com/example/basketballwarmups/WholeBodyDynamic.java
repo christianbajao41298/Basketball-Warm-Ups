@@ -22,7 +22,7 @@ public class WholeBodyDynamic extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_whole_body_dynamic);
 
-        myButton = findViewById(R.id.armstretchbutton);
+        myButton = findViewById(R.id.button4);
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,29 +30,6 @@ public class WholeBodyDynamic extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        myButton = findViewById(R.id.armstretchbutton);
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WholeBodyDynamic.this, ArmStretch.class);
-                startActivity(intent);
-            }
-        });
-        myButton = findViewById(R.id.armstretchbutton);
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WholeBodyDynamic.this, ArmStretch.class);
-                startActivity(intent);
-            }
-        });
-        myButton = findViewById(R.id.armstretchbutton);
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WholeBodyDynamic.this, ArmStretch.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }

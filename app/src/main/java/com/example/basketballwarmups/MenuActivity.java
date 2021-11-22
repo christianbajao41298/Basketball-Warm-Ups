@@ -26,7 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         videoView.setVideoPath("");
         videoView.start();
 
-        myImageButton = findViewById(R.id.imageButton5);
+        myImageButton = findViewById(R.id.wholebodydynamicButton);
         myImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

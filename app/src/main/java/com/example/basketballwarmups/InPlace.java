@@ -16,7 +16,6 @@ public class InPlace extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Objects.requireNonNull(getSupportActionBar()).hide();
-        setContentView(R.layout.activity_menu);
         setContentView(R.layout.activity_in_place);
     }
 }

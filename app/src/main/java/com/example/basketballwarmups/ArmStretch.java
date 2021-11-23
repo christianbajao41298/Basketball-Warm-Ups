@@ -14,7 +14,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 public class ArmStretch extends AppCompatActivity {
-    private static final  long START_TIME_IN_MILLIS = 30000;
+    private static final  long START_TIME_IN_MILLIS = 45000;
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
@@ -83,7 +83,7 @@ public class ArmStretch extends AppCompatActivity {
             mTimeLeftInMillis = START_TIME_IN_MILLIS;
             updateCountDownText();
             mButtonReset.setVisibility(View.INVISIBLE);
-                mButtonStartPause.setText("Start");
+            mButtonStartPause.setText("Start");
             mButtonStartPause.setVisibility(View.VISIBLE);
             }
             private void updateCountDownText(){

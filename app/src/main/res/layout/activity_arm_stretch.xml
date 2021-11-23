@@ -8,7 +8,7 @@
     tools:context=".ArmStretch">
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/armStretchLeftTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="81dp"
@@ -29,10 +29,10 @@
         android:layout_height="376dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/armStretchLeftTitle" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/armStretchDescription"
         android:layout_width="336dp"
         android:layout_height="70dp"
         android:layout_marginStart="38dp"
@@ -63,15 +63,15 @@
         android:id="@+id/resetButton"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="159dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="160dp"
         android:text="Reset"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countdown_text" />
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
 
     <TextView
         android:id="@+id/countdown_text"
@@ -84,7 +84,9 @@
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/armStretchDescription"
         tools:text="00:00" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,13 +8,13 @@
     tools:context=".ArmStretch">
 
     <TextView
-        android:id="@+id/armStretchLeftTitle"
+        android:id="@+id/armStretchTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="81dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="82dp"
-        android:text="Arm Stretch (Left Arm)"
+        android:text="@string/arm_stretch_left_arm_title"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -29,7 +29,7 @@
         android:layout_height="376dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/armStretchLeftTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/armStretchTitle" />
 
     <TextView
         android:id="@+id/armStretchDescription"
@@ -53,7 +53,7 @@
         android:layout_marginStart="159dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="159dp"
-        android:text="Start"
+        android:text="@string/startTextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="160dp"
-        android:text="Reset"
+        android:text="@string/resetTextButton"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -80,7 +80,7 @@
         android:layout_marginStart="147dp"
         android:layout_marginTop="33dp"
         android:layout_marginEnd="147dp"
-        android:text="TextView"
+        android:text="@string/timerNumber"
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"

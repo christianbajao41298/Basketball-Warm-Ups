@@ -7,13 +7,13 @@
     tools:context=".PushUps">
 
     <TextView
-        android:id="@+id/textView53"
+        android:id="@+id/pushUpsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="133dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="133dp"
-        android:text="Push Ups"
+        android:text="@string/push_ups_title"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -28,10 +28,10 @@
         android:layout_height="376dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+        app:layout_constraintTop_toBottomOf="@+id/pushUpsTitle" />
 
     <TextView
-        android:id="@+id/textView54"
+        android:id="@+id/pushUpsDescription"
         android:layout_width="336dp"
         android:layout_height="70dp"
         android:layout_marginStart="38dp"
@@ -51,7 +51,7 @@
         android:layout_marginStart="159dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="159dp"
-        android:text="Start"
+        android:text="@string/startTextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countdown_text" />
@@ -63,7 +63,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="160dp"
-        android:text="Reset"
+        android:text="@string/resetTextButton"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -77,12 +77,12 @@
         android:layout_marginStart="147dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="147dp"
-        android:text="TextView"
+        android:text="@string/timerNumber"
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView54"
+        app:layout_constraintTop_toBottomOf="@+id/pushUpsDescription"
         tools:text="00:00" />
 </androidx.constraintlayout.widget.ConstraintLayout>

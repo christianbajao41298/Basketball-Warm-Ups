@@ -7,13 +7,13 @@
     tools:context=".ArmStretch2">
 
     <TextView
-        android:id="@+id/armStretchRightTitle"
+        android:id="@+id/armStretch2Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="82dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="82dp"
-        android:text="Arm Stretch (Right Arm)"
+        android:text="@string/arm_stretch_right_arm_title"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         android:layout_height="376dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/armStretchRightTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/armStretch2Title" />
 
     <TextView
         android:id="@+id/armStretch2Description"
@@ -51,7 +51,7 @@
         android:layout_marginStart="159dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="159dp"
-        android:text="Start"
+        android:text="@string/startTextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countdown_text"
@@ -64,7 +64,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="160dp"
-        android:text="Reset"
+        android:text="@string/resetTextButton"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -78,7 +78,7 @@
         android:layout_marginStart="147dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="147dp"
-        android:text="TextView"
+        android:text="@string/timerNumber"
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"

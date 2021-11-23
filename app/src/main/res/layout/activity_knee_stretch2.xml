@@ -7,19 +7,20 @@
     tools:context=".KneeStretch2">
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/kneeStretch2Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="81dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="82dp"
-        android:text="Knee Stretch (Left Knee)"
+        android:text="@string/knee_stretch_left_knee2_title"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <VideoView
         android:id="@+id/videoView5"
@@ -27,10 +28,10 @@
         android:layout_height="376dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/kneeStretch2Title" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/kneeStretch2Description"
         android:layout_width="336dp"
         android:layout_height="70dp"
         android:layout_marginStart="38dp"
@@ -50,7 +51,7 @@
         android:layout_marginStart="159dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="159dp"
-        android:text="Start"
+        android:text="@string/startTextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countdown_text" />
@@ -62,7 +63,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="160dp"
-        android:text="Reset"
+        android:text="@string/resetTextButton"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -76,12 +77,12 @@
         android:layout_marginStart="147dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="147dp"
-        android:text="TextView"
+        android:text="@string/timerNumber"
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/kneeStretch2Description"
         tools:text="00:00" />
 </androidx.constraintlayout.widget.ConstraintLayout>

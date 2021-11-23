@@ -109,4 +109,26 @@
     <string name="action_settings">Settings</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="startTextButton">Start</string>
+    <string name="resetTextButton">Reset</string>
+    <string name="timerNumber">TextView</string>
+    <string name="arm_circles_title">Arm Circles</string>
+    <string name="arm_stretch_left_arm_title">Arm Stretch (Left Arm)</string>
+    <string name="arm_stretch_right_arm_title">Arm Stretch (Right Arm)</string>
+    <string name="butt_kicks_title">Butt Kicks</string>
+    <string name="frankenstein_march_title">Frankenstein March</string>
+    <string name="glute_walk_title">Glute Walk</string>
+    <string name="inchworm_title">Inchworm</string>
+    <string name="jumping_jacks_title">Jumping Jacks</string>
+    <string name="knee_hugs_left_knee_title">Knee Hugs (Left Knee)</string>
+    <string name="knee_hugs_right_knee_title">Knee Hugs (Right Knee)</string>
+    <string name="knee_stretch_left_knee_title">Knee Stretch (Left Knee)</string>
+    <string name="knee_stretch_left_knee2_title">Knee Stretch (Right Knee)</string>
+    <string name="lunges_title">Lunges</string>
+    <string name="push_ups_title">Push Ups</string>
+    <string name="side_slide_title">Side Slide</string>
+    <string name="squats_title">Squats</string>
+    <string name="walking_high_knees_title">Walking High Knees</string>
+    <string name="walking_lunge_with_rotation_title">Walking Lunge with Rotation</string>
+    <string name="in_place_title">In Place</string>
 </resources>

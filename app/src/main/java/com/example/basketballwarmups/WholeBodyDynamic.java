@@ -26,7 +26,7 @@ public class WholeBodyDynamic extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WholeBodyDynamic.this, ArmStretch.class);
+                Intent intent = new Intent(WholeBodyDynamic.this, ArmCircles.class);
                 startActivity(intent);
             }
         });

@@ -131,4 +131,5 @@
     <string name="walking_high_knees_title">Walking High Knees</string>
     <string name="walking_lunge_with_rotation_title">Walking Lunge with Rotation</string>
     <string name="in_place_title">In Place</string>
+    <string name="next_warm_up">Next Warm Up:</string>
 </resources>

@@ -22,13 +22,13 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="413dp"
-        android:layout_height="216dp"
+        android:layout_width="525dp"
+        android:layout_height="250dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:srcCompat="@drawable/withballicon" />
+        app:srcCompat="@drawable/withballpreview" />
 
     <TextView
         android:id="@+id/textView18"

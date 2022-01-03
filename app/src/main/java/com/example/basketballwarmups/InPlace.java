@@ -19,7 +19,7 @@ public class InPlace extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Objects.requireNonNull(getSupportActionBar()).hide();
-        setContentView(R.layout.activity_whole_body_dynamic);
+        setContentView(R.layout.activity_in_place);
 
         myButton = findViewById(R.id.button4);
         myButton.setOnClickListener(new View.OnClickListener() {

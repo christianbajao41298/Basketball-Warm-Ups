@@ -35,16 +35,16 @@ public class MenuActivity extends AppCompatActivity {
             }
 
         });
-        myImageButton = findViewById(R.id.imageButton6);
+        myImageButton = findViewById(R.id.inPlaceButton);
         myImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, InPlace.class);
+                Intent intent = new Intent(MenuActivity.this, InPlacee.class);
                 startActivity(intent);
             }
         });
 
-        myImageButton = findViewById(R.id.imageButton7);
+        myImageButton = findViewById(R.id.withBallButton);
         myImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +53,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        myImageButton = findViewById(R.id.imageButton8);
+        myImageButton = findViewById(R.id.stretchingButton);
         myImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

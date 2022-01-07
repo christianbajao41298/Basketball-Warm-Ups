@@ -34,22 +34,14 @@ public class ArmCircles extends AppCompatActivity {
         mTextViewCountDown = findViewById(R.id.countdown_text);
         mButtonStartPause = findViewById(R.id.startButton);
         mButtonReset = findViewById(R.id.resetButton);
-        mButtonStartPause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mTimerRunning) {
-                    pauseTimer();
-                } else {
-                    startTimer();
-                }
+        mButtonStartPause.setOnClickListener(v -> {
+            if (mTimerRunning) {
+                pauseTimer();
+            } else {
+                startTimer();
             }
         });
-        mButtonReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resetTimer();
-            }
-        });
+        mButtonReset.setOnClickListener(v -> resetTimer());
         updateCountDownText();
     }
 

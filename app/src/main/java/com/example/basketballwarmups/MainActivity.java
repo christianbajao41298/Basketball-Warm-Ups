@@ -1,12 +1,12 @@
 package com.example.basketballwarmups;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 
@@ -21,12 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(MainActivity.this, MenuActivity.class));
-            }
-        },  2000);
+        handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MenuActivity.class)),  2000);
 
     }
 }

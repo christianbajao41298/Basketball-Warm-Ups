@@ -2,7 +2,6 @@ package com.example.basketballwarmups;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
@@ -27,39 +26,26 @@ public class MenuActivity extends AppCompatActivity {
         videoView.start();
 
         myImageButton = findViewById(R.id.wholebodydynamicButton);
-        myImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, WholeBodyDynamic.class);
-                startActivity(intent);
-            }
-
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, WholeBodyDynamic.class);
+            startActivity(intent);
         });
         myImageButton = findViewById(R.id.inPlaceButton);
-        myImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, InPlacee.class);
-                startActivity(intent);
-            }
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, InPlacee.class);
+            startActivity(intent);
         });
 
         myImageButton = findViewById(R.id.withBallButton);
-        myImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, WithBall.class);
-                startActivity(intent);
-            }
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, WithBall.class);
+            startActivity(intent);
         });
 
         myImageButton = findViewById(R.id.stretchingButton);
-        myImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, Stretching.class);
-                startActivity(intent);
-            }
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, Stretching.class);
+            startActivity(intent);
         });
     }
 

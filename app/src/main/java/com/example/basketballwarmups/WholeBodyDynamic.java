@@ -37,6 +37,11 @@ public class WholeBodyDynamic extends AppCompatActivity {
             Intent intent = new Intent(WholeBodyDynamic.this, ArmCircles.class);
             startActivity(intent);
         });
+        myImageButton = findViewById(R.id.kneeHugsLeftButtonIcon);
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WholeBodyDynamic.this, KneeHugs.class);
+            startActivity(intent);
+        });
 
             }
         }

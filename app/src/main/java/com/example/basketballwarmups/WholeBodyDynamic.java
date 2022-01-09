@@ -27,6 +27,11 @@ public class WholeBodyDynamic extends AppCompatActivity {
             Intent intent = new Intent(WholeBodyDynamic.this, ArmStretch.class);
             startActivity(intent);
         });
+        myImageButton = findViewById(R.id.armStretchRightButtonIcon);
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WholeBodyDynamic.this, ArmStretch2.class);
+            startActivity(intent);
+        });
 
             }
         }

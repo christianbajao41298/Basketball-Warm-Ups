@@ -132,4 +132,9 @@
     <string name="walking_lunge_with_rotation_title">Walking Lunge with Rotation</string>
     <string name="in_place_title">In Place</string>
     <string name="next_warm_up">Next Warm Up:</string>
+    <string name="button">button</string>
+    <string name="imagebutton" />
+    <string name="imageButton" />
+    <string name="imagepreview">imagePreview</string>
+    <string name="imagePreview" />
 </resources>

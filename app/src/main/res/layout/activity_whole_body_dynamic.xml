@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:text="Whole Body Dynamic"
+        android:text="@string/whole_body_dynamic"
         android:textColor="#020202"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -27,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19"
-        app:srcCompat="@drawable/wholebodypreview" />
+        app:srcCompat="@drawable/wholebodypreview"
+        android:contentDescription="@string/imagePreview" />
 
     <TextView
         android:id="@+id/textView20"
@@ -70,10 +71,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/armstretchleftbuttonicon" />
+                app:srcCompat="@drawable/armstretchleftbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/armStretchRightButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -83,10 +85,11 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/armStretchLeftButtonIcon"
-                app:srcCompat="@drawable/armstretchrightbuttonicon" />
+                app:srcCompat="@drawable/armstretchrghtbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/kneeHugsLeftButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -95,11 +98,12 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-                app:srcCompat="@drawable/kneehugsleftbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/armCirclesButtonIcon"
+                app:srcCompat="@drawable/kneehugsleftbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/kneeHugsRightButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -107,11 +111,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-                app:srcCompat="@drawable/kneehugsrightbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/kneeHugsLeftButtonIcon"
+                app:srcCompat="@drawable/kneehugsrightbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/armCirclesButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -119,11 +124,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-                app:srcCompat="@drawable/armcirclesbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/armStretchRightButtonIcon"
+                app:srcCompat="@drawable/armcirclesbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/jumpingJacksButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -131,11 +137,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-                app:srcCompat="@drawable/jumpingjacksbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/kneeHugsRightButtonIcon"
+                app:srcCompat="@drawable/jumpingjacksbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/kneeStretchLeftButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -143,11 +150,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-                app:srcCompat="@drawable/kneestretchleftbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/jumpingJacksButtonIcon"
+                app:srcCompat="@drawable/kneestretchleftbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/kneeStretchRightButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -155,11 +163,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-                app:srcCompat="@drawable/kneestretchrightbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/kneeStretchLeftButtonIcon"
+                app:srcCompat="@drawable/kneestretchrightbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/buttKicksButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -167,11 +176,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-                app:srcCompat="@drawable/buttkicksbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/kneeStretchRightButtonIcon"
+                app:srcCompat="@drawable/buttkicksbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/walkingHighKneesButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -179,11 +189,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-                app:srcCompat="@drawable/walkinghighkneesbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/buttKicksButtonIcon"
+                app:srcCompat="@drawable/walkinghighkneesbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/sideSlideButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -191,11 +202,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton10"
-                app:srcCompat="@drawable/sideslidebuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/walkingHighKneesButtonIcon"
+                app:srcCompat="@drawable/sideslidebuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton13"
+                android:id="@+id/lungesButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -203,11 +215,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton11"
-                app:srcCompat="@drawable/lungesbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/sideSlideButtonIcon"
+                app:srcCompat="@drawable/lungesbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton14"
+                android:id="@+id/frankMarchButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -215,11 +228,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton13"
-                app:srcCompat="@drawable/frankmarchbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/lungesButtonIcon"
+                app:srcCompat="@drawable/frankmarchbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton15"
+                android:id="@+id/squatButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -227,11 +241,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton14"
-                app:srcCompat="@drawable/squatbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/frankMarchButtonIcon"
+                app:srcCompat="@drawable/squatbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton16"
+                android:id="@+id/inchWormButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -239,11 +254,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton15"
-                app:srcCompat="@drawable/inchwormbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/squatButtonIcon"
+                app:srcCompat="@drawable/inchwormbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton17"
+                android:id="@+id/walkingLungeButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -251,11 +267,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton16"
-                app:srcCompat="@drawable/walkinglungebuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/inchWormButtonIcon"
+                app:srcCompat="@drawable/walkinglungebuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton18"
+                android:id="@+id/gluteWalkButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -263,11 +280,12 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton17"
-                app:srcCompat="@drawable/glutewalkbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/walkingLungeButtonIcon"
+                app:srcCompat="@drawable/glutewalkbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
             <ImageButton
-                android:id="@+id/imageButton19"
+                android:id="@+id/pushUpButtonIcon"
                 android:layout_width="350dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="20dp"
@@ -277,8 +295,9 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton18"
-                app:srcCompat="@drawable/pushupbuttonicon" />
+                app:layout_constraintTop_toBottomOf="@+id/gluteWalkButtonIcon"
+                app:srcCompat="@drawable/pushupbuttonicon"
+                android:contentDescription="@string/imageButton" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

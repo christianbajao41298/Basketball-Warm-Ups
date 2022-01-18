@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GluteWalk">
+    tools:context=".KneeStretchLeft">
 
     <TextView
-        android:id="@+id/gluteWalkTitle"
+        android:id="@+id/kneeStretchLeftTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="133dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="133dp"
-        android:text="@string/glute_walk_title"
+        android:text="@string/knee_stretch_left_knee_title"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -23,15 +23,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <VideoView
-        android:id="@+id/videoView17"
+        android:id="@+id/videoView6"
         android:layout_width="wrap_content"
         android:layout_height="376dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gluteWalkTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/kneeStretchLeftTitle" />
 
     <TextView
-        android:id="@+id/gluteWalkDescription"
+        android:id="@+id/walkingLungeDescription"
         android:layout_width="336dp"
         android:layout_height="70dp"
         android:layout_marginStart="38dp"
@@ -39,13 +39,13 @@
         android:layout_marginEnd="38dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et consectetur ante. Vivamus vulputate nibh eros, vel tempor magna posuere sed. Sed fermentum tortor tellus,"
         android:textAlignment="center"
-        android:textColor="#020202"
+        android:textColor="#070707"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoView17" />
+        app:layout_constraintTop_toBottomOf="@+id/videoView6" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/startButton"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="159dp"
@@ -66,16 +66,15 @@
         android:text="@string/resetTextButton"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
 
     <TextView
         android:id="@+id/countdown_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="147dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="33dp"
         android:layout_marginEnd="147dp"
         android:text="@string/timerNumber"
         android:textColor="@color/black"
@@ -83,6 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gluteWalkDescription"
-        tools:text="00:00" />
+        app:layout_constraintTop_toBottomOf="@+id/walkingLungeDescription"
+        tools:text="00:00"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 public class WalkingHighKnees extends AppCompatActivity {
-    private static final  long START_TIME_IN_MILLIS = 45000;
+    private static final long START_TIME_IN_MILLIS = 45000;
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
@@ -24,35 +24,26 @@ public class WalkingHighKnees extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Objects.requireNonNull(getSupportActionBar()).hide();
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_walking_high_knees);
 
         mTextViewCountDown = findViewById(R.id.countdown_text);
         mButtonStartPause = findViewById(R.id.startButton);
         mButtonReset = findViewById(R.id.resetButton);
-        mButtonStartPause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mTimerRunning) {
-                    pauseTimer();
-                } else {
-                    startTimer();
-                }
-
+        mButtonStartPause.setOnClickListener(v -> {
+            if (mTimerRunning) {
+                pauseTimer();
+            } else {
+                startTimer();
             }
         });
-        mButtonReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resetTimer();
-            }
-        });
+        mButtonReset.setOnClickListener(v -> resetTimer());
         updateCountDownText();
-
     }
+
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
             @Override
@@ -60,6 +51,7 @@ public class WalkingHighKnees extends AppCompatActivity {
                 mTimeLeftInMillis = millisUntilFinished;
                 updateCountDownText();
             }
+
             @Override
             public void onFinish() {
                 mTimerRunning = false;
@@ -72,20 +64,23 @@ public class WalkingHighKnees extends AppCompatActivity {
         mButtonStartPause.setText("Pause");
         mButtonReset.setVisibility(View.INVISIBLE);
     }
-    private void pauseTimer(){
+
+    private void pauseTimer() {
         mCountDownTimer.cancel();
         mTimerRunning = false;
         mButtonStartPause.setText("Continue");
-        mButtonReset.setVisibility(View.VISIBLE );
+        mButtonReset.setVisibility(View.VISIBLE);
     }
-    private void resetTimer(){
+
+    private void resetTimer() {
         mTimeLeftInMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
         mButtonReset.setVisibility(View.INVISIBLE);
         mButtonStartPause.setText("Start");
         mButtonStartPause.setVisibility(View.VISIBLE);
     }
-    private void updateCountDownText(){
+
+    private void updateCountDownText() {
         int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
         String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);

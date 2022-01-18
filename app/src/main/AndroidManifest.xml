@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BasketballWarmUps">
-        <activity android:name=".Squat"></activity>
+        <activity android:name=".PushUp"></activity>
+        <activity android:name=".GluteWalks" />
+        <activity android:name=".WalkingLungeWithRotation" />
+        <activity android:name=".Inchworm" />
+        <activity android:name=".Squat" />
         <activity android:name=".FrankensteinMarch" />
         <activity android:name=".Lunges" />
         <activity android:name=".SideSlides" />

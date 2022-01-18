@@ -96,6 +96,27 @@ public class WholeBodyDynamic extends AppCompatActivity {
             Intent intent = new Intent(WholeBodyDynamic.this, Squat.class);
             startActivity(intent);
         });
+        myImageButton = findViewById(R.id.inchwormButtonIcon);
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WholeBodyDynamic.this, Inchworm.class);
+            startActivity(intent);
+        });
+        myImageButton = findViewById(R.id.walkingLungeWithRotationButtonIcon);
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WholeBodyDynamic.this, WalkingLungeWithRotation.class);
+            startActivity(intent);
+        });
+        myImageButton = findViewById(R.id.gluteWalksButtonIcon);
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WholeBodyDynamic.this, GluteWalks.class);
+            startActivity(intent);
+        });
+        myImageButton = findViewById(R.id.pushUpButtonIcon);
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WholeBodyDynamic.this, PushUp.class);
+            startActivity(intent);
+        });
+
 
 
     }

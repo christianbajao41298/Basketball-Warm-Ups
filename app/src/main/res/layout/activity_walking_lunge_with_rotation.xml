@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FrankensteinMarch">
+    tools:context=".WalkingLungeWithRotation">
 
     <TextView
-        android:id="@+id/frankensteinMarchTitle"
+        android:id="@+id/walkingLungeWithRotationTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="133dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="133dp"
-        android:text="@string/frankenstein_march_title"
+        android:text="@string/walking_lunge_with_rotation_title"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -28,7 +28,7 @@
         android:layout_height="376dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frankensteinMarchTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/walkingLungeWithRotationTitle" />
 
     <TextView
         android:id="@+id/walkingLungeDescription"
@@ -84,5 +84,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/walkingLungeDescription"
         tools:text="00:00"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

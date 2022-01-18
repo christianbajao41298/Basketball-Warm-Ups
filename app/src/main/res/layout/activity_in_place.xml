@@ -46,128 +46,178 @@
         android:layout_width="392dp"
         android:layout_height="457dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
         android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/sampleexerciseicon" />
 
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView10"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/armStretchLeftButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/armstretchleftbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView11"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/armStretchRightButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/armStretchLeftButtonIcon2"
+            app:srcCompat="@drawable/armstretchrightbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView12"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/armCirclesButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/armStretchRightButtonIcon2"
+            app:srcCompat="@drawable/armcirclesbuttonicon" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="49dp"
-                android:text="Arm Stretch"
-                android:textColor="#020202"
-                app:layout_constraintStart_toEndOf="@+id/imageView10"
-                app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/kneeHugsLeftButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/armCirclesButtonIcon2"
+            app:srcCompat="@drawable/kneehugsleftbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView24"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView13"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/kneeHugsRightButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kneeHugsLeftButtonIcon2"
+            app:srcCompat="@drawable/kneehugsrightbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView25"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView24"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/jumpingJacksButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kneeHugsRightButtonIcon2"
+            app:srcCompat="@drawable/jumpingjacksbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView36"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView25"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/kneeStretchLeftButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jumpingJacksButtonIcon2"
+            app:srcCompat="@drawable/kneestretchleftbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView37"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView36"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/kneeStretchRightButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kneeStretchLeftButtonIcon2"
+            app:srcCompat="@drawable/kneestretchrightbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView38"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView37"
-                app:srcCompat="@drawable/sampleexerciseicon" />
+        <ImageButton
+            android:id="@+id/buttKicksButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kneeStretchRightButtonIcon2"
+            app:srcCompat="@drawable/buttkicksbuttonicon" />
 
-            <ImageView
-                android:id="@+id/imageView39"
-                android:layout_width="113dp"
-                android:layout_height="113dp"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView38"
-                app:srcCompat="@drawable/sampleexerciseicon" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageButton
+            android:id="@+id/walkingHighKneesButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttKicksButtonIcon2"
+            app:srcCompat="@drawable/walkinghighkneesbuttonicon" />
+
+        <ImageButton
+            android:id="@+id/lungesButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/walkingHighKneesButtonIcon2"
+            app:srcCompat="@drawable/lungesbuttonicon" />
+
+        <ImageButton
+            android:id="@+id/squatButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lungesButtonIcon2"
+            app:srcCompat="@drawable/squatbuttonicon" />
+
+        <ImageButton
+            android:id="@+id/pushUpButtonIcon2"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/squatButtonIcon2"
+            app:srcCompat="@drawable/pushupbuttonicon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

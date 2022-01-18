@@ -32,7 +32,7 @@ public class MenuActivity extends AppCompatActivity {
         });
         myImageButton = findViewById(R.id.inPlaceButton);
         myImageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MenuActivity.this, InPlacee.class);
+            Intent intent = new Intent(MenuActivity.this, InPlace.class);
             startActivity(intent);
         });
 

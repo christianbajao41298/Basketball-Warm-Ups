@@ -83,7 +83,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/armStretchLeftButtonIcon2"
-            app:srcCompat="@drawable/armstretchrightbuttonicon" />
+            app:srcCompat="@drawable/armstretchrghtbuttonicon" />
 
         <ImageButton
             android:id="@+id/armCirclesButtonIcon2"

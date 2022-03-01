@@ -143,4 +143,5 @@
     <string name="side_lunge_with_a_touch">Side Lunge With a Touch</string>
     <string name="back_lunge_with_a_pass_back">Back Lunge With a Pass Back</string>
     <string name="single_leg_roll">Single Leg Roll</string>
+    <string name="rest">REST</string>
 </resources>

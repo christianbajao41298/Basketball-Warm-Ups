@@ -9,6 +9,6 @@ public class RestJumpingJacks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arm_circles_rest);
+        setContentView(R.layout.activity_rest_jumping_jacks);
     }
 }

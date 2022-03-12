@@ -11,7 +11,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="387dp"
+        android:layout_width="match_parent"
         android:layout_height="69dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
@@ -23,25 +23,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="W A R M  U P S"
-        app:titleMarginStart="135dp"
+        app:titleMarginStart="110dp"
         app:titleTextColor="@color/black" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/featured_exercise"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="342dp"
+        android:layout_width="match_parent"
         android:layout_height="214dp"
         android:layout_marginStart="22dp"
         android:layout_marginTop="8dp"
@@ -53,14 +55,17 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/categories"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/videoView" />
 
@@ -97,9 +102,11 @@
         android:layout_gravity="center"
         android:layout_marginStart="40dp"
         android:layout_marginTop="37dp"
+        android:layout_marginEnd="13dp"
         android:adjustViewBounds="true"
-        android:contentDescription="@string/dynamicbutton"
 
+        android:contentDescription="@string/dynamicbutton"
+        app:layout_constraintEnd_toStartOf="@+id/stretchingButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/withballbuttonicon" />
@@ -109,11 +116,13 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
+        android:layout_marginStart="13dp"
         android:layout_marginTop="33dp"
         android:layout_marginEnd="40dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/dynamicbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/withBallButton"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/stretchingbuttonicon" />
 
@@ -150,6 +159,8 @@
         android:layout_gravity="center"
         android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/inPlaceButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/wholebodybuttonicon" />
@@ -159,10 +170,13 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="57dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wholebodydynamicButton"
         app:layout_constraintTop_toBottomOf="@+id/videoView"
         app:srcCompat="@drawable/inplacebuttonicon" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

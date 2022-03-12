@@ -21,7 +21,7 @@ public class MenuActivity extends AppCompatActivity {
 
         myImageButton = findViewById(R.id.wholebodydynamicButton);
         myImageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MenuActivity.this, WholeBodyDynamic.class);
+            Intent intent = new Intent(MenuActivity.this, WholeBodyDynamic2.class);
             startActivity(intent);
         });
         myImageButton = findViewById(R.id.inPlaceButton);
@@ -32,7 +32,7 @@ public class MenuActivity extends AppCompatActivity {
 
         myImageButton = findViewById(R.id.withBallButton);
         myImageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MenuActivity.this, WithBall.class);
+            Intent intent = new Intent(MenuActivity.this, WithBall2.class);
             startActivity(intent);
         });
 

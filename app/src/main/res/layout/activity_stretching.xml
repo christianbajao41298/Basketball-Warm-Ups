@@ -45,14 +45,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="393dp"
+        android:layout_width="match_parent"
         android:layout_height="466dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20">
 
@@ -94,7 +93,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/kneeHugsRightButtonIcon3"
                 app:srcCompat="@drawable/kneestretchleftbuttonicon" />
@@ -107,7 +105,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/kneeStretchLeftButtonIcon3"
                 app:srcCompat="@drawable/kneestretchrightbuttonicon" />
@@ -120,7 +117,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.523"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/armStretchRightButtonIcon3"
                 app:srcCompat="@drawable/kneehugsleftbuttonicon" />

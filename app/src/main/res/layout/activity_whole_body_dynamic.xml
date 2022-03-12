@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Stretching">
 
+
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
@@ -21,9 +22,11 @@
 
     <ImageView
         android:id="@+id/imageView19"
-        android:layout_width="525dp"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:contentDescription="@string/imagePreview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="393dp"
+        android:layout_width="match_parent"
         android:layout_height="466dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
@@ -68,11 +71,11 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
+                android:contentDescription="@string/imageButton"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/armstretchleftbuttonicon"
-                android:contentDescription="@string/imageButton" />
+                app:srcCompat="@drawable/armstretchleftbuttonicon" />
 
             <ImageButton
                 android:id="@+id/armStretchRightButtonIcon"
@@ -81,12 +84,11 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
+                android:contentDescription="@string/imageButton"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/armStretchLeftButtonIcon"
-                app:srcCompat="@drawable/armstretchrghtbuttonicon"
-                android:contentDescription="@string/imageButton" />
+                app:srcCompat="@drawable/armstretchrghtbuttonicon" />
 
             <ImageButton
                 android:id="@+id/armCirclesButtonIcon"

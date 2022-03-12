@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RestButtKick">
+    tools:context=".RestSideLungeWithTouch">
 
     <TextView
         android:id="@+id/textView9"
@@ -44,7 +44,7 @@
         android:layout_marginStart="92dp"
         android:layout_marginEnd="92dp"
         android:layout_marginBottom="192dp"
-        android:text="@string/butt_kicks_title"
+        android:text="@string/side_lunge_with_a_touch"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -63,6 +63,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/previewbuttkick" />
-
+        app:srcCompat="@drawable/previewsidelungetouch" />
 </androidx.constraintlayout.widget.ConstraintLayout>

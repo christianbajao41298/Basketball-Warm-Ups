@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BasketballWarmUps">
-        <activity android:name=".RestPushUp"></activity>
+        <activity android:name=".WithBall2"></activity>
+        <activity android:name=".WholeBodyDynamic2" />
+        <activity android:name=".RestSingleLegRoll" />
+        <activity android:name=".RestLungeWithPassBack" />
+        <activity android:name=".RestSideLungeWithTouch" />
+        <activity android:name=".RestWaistWrap" />
+        <activity android:name=".RestBallTap" />
+        <activity android:name=".RestBallDribble" />
+        <activity android:name=".RestPushUp" />
         <activity android:name=".RestGluteWalk" />
         <activity android:name=".RestWalkingLungesWithRotation" />
         <activity android:name=".RestInchworm" />

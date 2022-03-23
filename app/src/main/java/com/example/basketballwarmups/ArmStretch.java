@@ -1,5 +1,6 @@
 package com.example.basketballwarmups;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -11,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class ArmStretch extends AppCompatActivity {
-    private static final  long START_TIME_IN_MILLIS = 45000;
+    private static final  long START_TIME_IN_MILLIS = 6000;
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
@@ -28,7 +29,10 @@ public class ArmStretch extends AppCompatActivity {
         mTextViewCountDown = findViewById(R.id.countdown_text);
         mButtonStartPause = findViewById(R.id.startButton);
         mButtonReset = findViewById(R.id.resetButton);
+        startTimer();
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
+
+
 
             @Override
             public void onClick(View v) {
@@ -58,10 +62,7 @@ public class ArmStretch extends AppCompatActivity {
                     }
                     @Override
                     public void onFinish() {
-                        mTimerRunning = false;
-                        mButtonStartPause.setText("Start");
-                        mButtonStartPause.setVisibility(View.INVISIBLE);
-                        mButtonReset.setVisibility(View.VISIBLE);
+                        startActivity(new Intent(getApplicationContext(),ArmStretch2.class));
                     }
                 }.start();
                     mTimerRunning = true;
@@ -78,8 +79,23 @@ public class ArmStretch extends AppCompatActivity {
             mTimeLeftInMillis = START_TIME_IN_MILLIS;
             updateCountDownText();
             mButtonReset.setVisibility(View.INVISIBLE);
-            mButtonStartPause.setText("Start");
+            mButtonStartPause.setText("Pause");
             mButtonStartPause.setVisibility(View.VISIBLE);
+
+                mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        mTimeLeftInMillis = millisUntilFinished;
+                        updateCountDownText();
+                    }
+                    @Override
+                    public void onFinish() {
+                        startActivity(new Intent(getApplicationContext(),ArmStretch2.class));
+                    }
+                }.start();
+                mTimerRunning = true;
+                mButtonStartPause.setText("Pause");
+                mButtonReset.setVisibility(View.INVISIBLE);
             }
             private void updateCountDownText(){
                 int minutes = (int) (mTimeLeftInMillis / 1000) / 60;

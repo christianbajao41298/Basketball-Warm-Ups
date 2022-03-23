@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BasketballWarmUps">
-        <activity android:name=".WithBall2"></activity>
-        <activity android:name=".WholeBodyDynamic2" />
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".WholeBodyDynamic3" />
+        <activity android:name=".WithBall2" />
         <activity android:name=".RestSingleLegRoll" />
         <activity android:name=".RestLungeWithPassBack" />
         <activity android:name=".RestSideLungeWithTouch" />
@@ -56,14 +57,12 @@
         <activity android:name=".JumpingJacks" />
         <activity android:name=".KneeHugsRight" />
         <activity android:name=".KneeHugsLeft" />
-        <activity android:name=".InPlacee" />
         <activity android:name=".ArmCircles" />
         <activity android:name=".ArmStretch2" />
         <activity android:name=".ArmStretch" />
         <activity android:name=".Stretching" />
         <activity android:name=".WithBall" />
         <activity android:name=".InPlace" />
-        <activity android:name=".WholeBodyDynamic" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

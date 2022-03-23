@@ -29,6 +29,7 @@ public class ArmStretch extends AppCompatActivity {
         mButtonStartPause = findViewById(R.id.startButton);
         mButtonReset = findViewById(R.id.resetButton);
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 if (mTimerRunning) {

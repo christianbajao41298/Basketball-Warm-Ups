@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:elevation="4dp"
-    android:orientation="horizontal"
     tools:context=".MenuActivity">
 
 
@@ -178,5 +177,16 @@
         app:layout_constraintTop_toBottomOf="@+id/videoView"
         app:srcCompat="@drawable/inplacebuttonicon" />
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/settingsappicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,9 +19,11 @@ public class MenuActivity extends AppCompatActivity {
         videoView.setVideoPath("");
         videoView.start();
 
+
+
         myImageButton = findViewById(R.id.wholebodydynamicButton);
         myImageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MenuActivity.this, WholeBodyDynamic2.class);
+            Intent intent = new Intent(MenuActivity.this, WholeBodyDynamic3.class);
             startActivity(intent);
         });
         myImageButton = findViewById(R.id.inPlaceButton);
@@ -39,6 +41,12 @@ public class MenuActivity extends AppCompatActivity {
         myImageButton = findViewById(R.id.stretchingButton);
         myImageButton.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, Stretching.class);
+            startActivity(intent);
+        });
+
+        myImageButton = findViewById(R.id.imageButton2);
+        myImageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, Settings.class);
             startActivity(intent);
         });
     }

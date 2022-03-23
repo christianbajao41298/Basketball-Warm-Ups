@@ -144,6 +144,15 @@
     <string name="back_lunge_with_a_pass_back">Back Lunge With a Pass Back</string>
     <string name="single_leg_roll">Single Leg Roll</string>
     <string name="rest">REST</string>
+    <string name="start">Start</string>
+    <string name="included_exercises">Included exercises:</string>
+
+    <string name="countdown_timer">Countdown Timer</string>
+    <string name="rest_timer">Rest Timer</string>
+    <string name="settingIcon">settingicon</string>
+    <string name="about_app">About App</string>
+
+    <string name="in_secs">in Secs</string>
 
 
 </resources>

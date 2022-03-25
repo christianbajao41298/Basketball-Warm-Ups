@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BasketballWarmUps">
-        <activity android:name=".TimerSample"></activity>
+        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".TimerSample" />
         <activity android:name=".Settings" />
         <activity android:name=".WholeBodyDynamic3" />
         <activity android:name=".WithBall2" />

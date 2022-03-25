@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Handler handler = new Handler();
-        handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MenuActivity.class)),  2000);
+        handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MainMenu.class)),  2000);
 
     }
 }

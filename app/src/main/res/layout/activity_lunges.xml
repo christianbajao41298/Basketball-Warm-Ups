@@ -6,83 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".Lunges">
 
-    <TextView
-        android:id="@+id/lungesTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="133dp"
-        android:text="@string/lunges_title"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <VideoView
-        android:id="@+id/videoView6"
-        android:layout_width="wrap_content"
-        android:layout_height="376dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lungesTitle" />
+        <TextView
+            android:id="@+id/armStretchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/arm_stretch_left_arm_title"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/walkingLungeDescription"
-        android:layout_width="336dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="38dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et consectetur ante. Vivamus vulputate nibh eros, vel tempor magna posuere sed. Sed fermentum tortor tellus,"
-        android:textAlignment="center"
-        android:textColor="#070707"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoView6" />
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="wrap_content"
+            android:layout_height="376dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/armStretchTitle" />
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="159dp"
-        android:text="@string/startTextButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countdown_text" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="How to perform:"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
 
-    <Button
-        android:id="@+id/resetButton"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="160dp"
-        android:text="@string/resetTextButton"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+        <TextView
+            android:id="@+id/armStretchDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et consectetur ante. Vivamus vulputate nibh eros, vel tempor magna posuere sed. Sed fermentum tortor tellus,"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView2" />
 
-    <TextView
-        android:id="@+id/countdown_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="147dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="147dp"
-        android:text="@string/timerNumber"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/walkingLungeDescription"
-        tools:text="00:00"/>
+        <TextView
+            android:id="@+id/countdown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/timerNumber"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/armStretchDescription"
+            tools:text="00:00" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/pause"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countdown_text" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/resetTextButton"
+            android:visibility="invisible" android:layout_marginBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startButton"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

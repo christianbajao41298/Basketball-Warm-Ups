@@ -33,7 +33,6 @@ public class ArmStretch extends AppCompatActivity {
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
 
 
-
             @Override
             public void onClick(View v) {
                 if (mTimerRunning) {
@@ -62,7 +61,7 @@ public class ArmStretch extends AppCompatActivity {
                     }
                     @Override
                     public void onFinish() {
-                        startActivity(new Intent(getApplicationContext(),ArmStretch2.class));
+                        startActivity(new Intent(getApplicationContext(),RestArmStretchRight.class));
                     }
                 }.start();
                     mTimerRunning = true;

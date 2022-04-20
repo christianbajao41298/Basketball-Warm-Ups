@@ -301,7 +301,7 @@
                     app:srcCompat="@drawable/pushupbuttonicon" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/wholeBodyDynamicStartButton"
                     android:layout_width="200dp"
                     android:layout_height="70dp"
                     android:layout_marginStart="20dp"

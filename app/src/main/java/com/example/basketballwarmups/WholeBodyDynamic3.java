@@ -2,6 +2,7 @@ package com.example.basketballwarmups;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class WholeBodyDynamic3 extends AppCompatActivity {
 
     ImageButton myImageButton;
+    Button myButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,5 +111,10 @@ public class WholeBodyDynamic3 extends AppCompatActivity {
             startActivity(intent);
         });
 
+        myButton = findViewById(R.id.wholeBodyDynamicStartButton);
+        myButton.setOnClickListener(v -> {
+            Intent intent = new Intent(WholeBodyDynamic3.this, ArmStretch.class);
+            startActivity(intent);
+        });
     }
 }

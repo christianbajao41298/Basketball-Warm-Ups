@@ -76,8 +76,8 @@
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             app:layout_constraintTop_toBottomOf="parent" />
-
     </FrameLayout>
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"

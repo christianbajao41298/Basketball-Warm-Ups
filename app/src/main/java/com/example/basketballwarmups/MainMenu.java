@@ -15,13 +15,14 @@ public class MainMenu extends AppCompatActivity {
     VideoView videoView;
     ImageButton myImageButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
         VideoView videoView =findViewById(R.id.videoView);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.sample);
+        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.armcircles);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

@@ -32,21 +32,13 @@
             android:textSize="24sp"
             android:textStyle="bold"/>
 
-        <FrameLayout
-            android:id="@+id/frameLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:layout_marginTop="10dp"
-            tools:ignore="NotSibling">
-
             <VideoView
                 android:id="@+id/videoView2"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/armStretchTitle" />
-        </FrameLayout>
 
         <TextView
             android:id="@+id/textView21"

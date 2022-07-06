@@ -58,7 +58,7 @@
                 android:layout_below="@id/textView1"/>
 
             <EditText
-                android:id="@+id/editTextNumber2"
+                android:id="@+id/text_input"
                 android:layout_width="82dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView1"
@@ -75,7 +75,7 @@
                 android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/editTextNumber2"
+                android:layout_below="@id/text_input"
                 android:layout_toEndOf="@id/textView2"
                 android:layout_marginLeft="57dp"
                 android:text="Save" />

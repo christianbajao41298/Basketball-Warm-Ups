@@ -22,7 +22,7 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
 
         VideoView videoView =findViewById(R.id.videoView);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.armcircles);
+        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.wew);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

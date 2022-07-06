@@ -89,7 +89,7 @@
                     android:layout_marginEnd="20dp"
                     android:contentDescription="@string/imageButton"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView21"
                     app:srcCompat="@drawable/armstretchleftbuttonicon" />

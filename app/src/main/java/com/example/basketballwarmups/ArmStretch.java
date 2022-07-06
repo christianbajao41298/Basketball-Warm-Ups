@@ -1,10 +1,14 @@
 package com.example.basketballwarmups;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.support.v4.app.INotificationSideChannel;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -14,7 +18,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class ArmStretch extends AppCompatActivity {
-    private static final  long START_TIME_IN_MILLIS = 6000;
+
+    ImageView img;
+    ImageButton myImageHomeButton;
+
+    DBHelper DB = new DBHelper(this);
+    private static long START_TIME_IN_MILLIS;
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
@@ -22,18 +31,33 @@ public class ArmStretch extends AppCompatActivity {
     private boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
     VideoView videoView;
-
+    private INotificationSideChannel.Default someCountDownTimer;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arm_stretch);
 
+        //get timer data
+        int data = DB.getTimerData();
+        START_TIME_IN_MILLIS = data*1000;
+        mTimeLeftInMillis = START_TIME_IN_MILLIS;
+
+
         VideoView videoView =findViewById(R.id.videoView2);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.armcircles);
+        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.kneehugs);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
         videoView.start();
+        mediaController.setVisibility(View.INVISIBLE);
+
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+                public void onPrepared(MediaPlayer mp) {
+                    mp.setLooping(true);
+            }
+        });
 
         mTextViewCountDown = findViewById(R.id.countdown_text);
         mButtonStartPause = findViewById(R.id.startButton);
@@ -55,7 +79,7 @@ public class ArmStretch extends AppCompatActivity {
         });
             mButtonReset.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) { resetTimer(); videoView.start();
+                public void onClick(View v) { resetTimer();
                 }
             });
              updateCountDownText();
@@ -86,15 +110,25 @@ public class ArmStretch extends AppCompatActivity {
             mButtonStartPause.setText("Continue");
             mButtonReset.setVisibility(View.VISIBLE );
 
-
             }
             private void resetTimer(){
-            mTimeLeftInMillis = START_TIME_IN_MILLIS;
+                //get timer data
+                int data = DB.getTimerData();
+                START_TIME_IN_MILLIS = data*1000;
+                mTimeLeftInMillis = START_TIME_IN_MILLIS;
             updateCountDownText();
             mButtonReset.setVisibility(View.INVISIBLE);
             mButtonStartPause.setText("Pause");
             mButtonStartPause.setVisibility(View.VISIBLE);
 
+                VideoView videoView =findViewById(R.id.videoView2);
+                videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.kneehugs);
+                MediaController mediaController = new MediaController(this);
+                mediaController.setAnchorView(videoView);
+                videoView.setMediaController(mediaController);
+                videoView.start();
+                mediaController.setVisibility(View.INVISIBLE);
+                videoView.setMediaController(mediaController);
 
                 mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
                     @Override

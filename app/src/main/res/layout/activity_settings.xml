@@ -91,7 +91,29 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <EditText
+                android:id="@+id/text_input2"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="121.5dp"
+                android:layout_toEndOf="@id/textView2"
+                android:layout_toRightOf="@id/textView2"
+                android:ems="10"
+                android:hint="@string/in_secs"
+                android:inputType="number" />
 
+            <Button
+                android:id="@+id/btnSave2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_input"
+                android:layout_toEndOf="@id/textView2"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="100dp"
+                android:text="Save" />
 
 
         </RelativeLayout>

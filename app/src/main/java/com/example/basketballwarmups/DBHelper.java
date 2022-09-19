@@ -15,12 +15,12 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table TimerData(id int , timervalue INT)");
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists TimerData");
     }
 
+//exercise timer
     public Boolean insertTimerData (int value){
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -36,7 +36,6 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
         }
     }
-
     public Boolean updateTimerData (int value){
         String id = "1";
         SQLiteDatabase DB = this.getWritableDatabase();
@@ -52,10 +51,53 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
         }
     }
-
     public int getTimerData () {
         SQLiteDatabase DB = this.getWritableDatabase();
         Cursor cursor = DB.rawQuery("Select timervalue from TimerData where id=?", new String[] {"1"});
+        int timerData = 0;
+        if (cursor.moveToFirst()) {
+            timerData = cursor.getInt(0);
+        }
+        cursor.close();
+        return timerData;
+    }
+
+ //rest timer
+ public Boolean insertRestTimerData (int value){
+     SQLiteDatabase DB = this.getWritableDatabase();
+     ContentValues contentValues = new ContentValues();
+     contentValues.put("id",2);
+     contentValues.put("timervalue",value);
+
+     long result = DB.insert("TimerData",null,contentValues);
+
+     if (result == -1){
+         return false;
+     }
+     else {
+         return true;
+     }
+ }
+
+    public Boolean updateRestTimerData (int value){
+        String id = "2";
+        SQLiteDatabase DB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("timervalue",value);
+
+        long result = DB.update("TimerData",contentValues,"id=?", new String [] {id});
+
+        if (result == -1){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public int getRestTimerData () {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("Select timervalue from TimerData where id=?", new String[] {"2"});
         int timerData = 0;
         if (cursor.moveToFirst()) {
             timerData = cursor.getInt(0);

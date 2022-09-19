@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Settings extends AppCompatActivity {
     //DatabaseHelper mDatabaseHelper;
-    private Button btnSave;
+    private Button btnSave, btnSave2;
     EditText editseconds;
     DBHelper DB;
 
@@ -22,6 +22,10 @@ public class Settings extends AppCompatActivity {
 
         editseconds=findViewById(R.id.text_input);
         btnSave = (Button) findViewById(R.id.btnSave);
+        DB=new DBHelper(this);
+
+        editseconds=findViewById(R.id.text_input2);
+        btnSave = (Button) findViewById(R.id.btnSave2);
         DB=new DBHelper(this);
 
         int data = DB.getTimerData();
@@ -46,7 +50,6 @@ public class Settings extends AppCompatActivity {
 
             }
         });
-
 
     }
 }

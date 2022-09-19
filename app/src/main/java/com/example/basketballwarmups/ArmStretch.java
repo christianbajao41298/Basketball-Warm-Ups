@@ -139,6 +139,7 @@ public class ArmStretch extends AppCompatActivity {
                     @Override
                     public void onFinish() {
                         startActivity(new Intent(getApplicationContext(),RestArmStretchRight.class));
+                        finish();
                     }
                 }.start();
                 mTimerRunning = true;

@@ -29,9 +29,21 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("timer Initialize", "Fail");
             }
 
-            Handler handler = new Handler();
-            handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MainMenu.class)), 2000);
+        }
+
+        int data2 = DB.getRestTimerData();
+        if (data2 == 0) {
+            int time = 20;
+            Boolean insertData = DB.insertRestTimerData(time);
+
+            if (insertData == true) {
+                Log.d("timer Initialize", "Success" + data2);
+            } else {
+                Log.d("timer Initialize", "Fail");
+            }
 
         }
+        Handler handler = new Handler();
+        handler.postDelayed(() -> startActivity(new Intent(MainActivity.this, MainMenu.class)), 2000);
     }
 }

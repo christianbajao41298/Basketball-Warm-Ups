@@ -83,7 +83,7 @@ public class ArmStretch extends AppCompatActivity {
                 }
             });
              updateCountDownText();
-
+//pogi
      }
             private void startTimer() {
                 mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {

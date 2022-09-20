@@ -91,9 +91,8 @@ public class ArmStretch extends AppCompatActivity {
                     public void onTick(long millisUntilFinished) {
                         mTimeLeftInMillis = millisUntilFinished;
                         updateCountDownText();
-
-
                     }
+
                     @Override
                     public void onFinish() {
                         startActivity(new Intent(getApplicationContext(),RestArmStretchRight.class));
@@ -152,5 +151,12 @@ public class ArmStretch extends AppCompatActivity {
                 String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
                 mTextViewCountDown.setText(timeLeftFormatted);
             }
-
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        mCountDownTimer.cancel();
+        startActivity(new Intent(ArmStretch.this, WholeBodyDynamic3.class));
+        finish();
+    }
     }

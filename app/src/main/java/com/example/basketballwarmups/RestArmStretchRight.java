@@ -31,6 +31,8 @@ public class RestArmStretchRight extends AppCompatActivity {
         START_TIME_IN_MILLIS = data*1000;
         mTimeLeftInMillis = START_TIME_IN_MILLIS;
         startTimer();
+
+
     }
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
@@ -41,8 +43,6 @@ public class RestArmStretchRight extends AppCompatActivity {
                 int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
                 String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
                 mTextViewCountDown.setText(timeLeftFormatted);
-
-
             }
             @Override
             public void onFinish() {
@@ -51,5 +51,13 @@ public class RestArmStretchRight extends AppCompatActivity {
             }
         }.start();
         mTimerRunning = true;
+    }
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        startActivity(new Intent(RestArmStretchRight.this, WholeBodyDynamic3.class));
+        mCountDownTimer.cancel();
+        finish();
     }
 }

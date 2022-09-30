@@ -26,7 +26,7 @@
             android:textAlignment="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/arm_stretch_left_arm_title"
+            android:text="@string/inchworm_title"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold"/>

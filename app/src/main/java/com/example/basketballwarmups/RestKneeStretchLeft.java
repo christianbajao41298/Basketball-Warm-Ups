@@ -25,7 +25,6 @@ public class RestKneeStretchLeft extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rest_knee_stretch_left);
-
         mTextViewCountDown = findViewById(R.id.countdown_text);
         //get timer data
         int data = DB.getRestTimerData();

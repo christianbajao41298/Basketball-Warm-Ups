@@ -116,5 +116,14 @@ public class WholeBodyDynamic3 extends AppCompatActivity {
             Intent intent = new Intent(WholeBodyDynamic3.this, ArmStretch.class);
             startActivity(intent);
         });
+
+
+    }
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        startActivity(new Intent(WholeBodyDynamic3.this, MainMenu.class));
+        finish();
     }
 }
